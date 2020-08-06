@@ -1,0 +1,19 @@
+n=int(input())
+l=[3,2,1]
+a,f=3,0
+for i in range(3,n):
+    if i==n:
+        print(l[i])
+        break
+    else:
+        k=a*2
+        while(k>=1):
+            if len(l)>=n:
+                f=1
+                break
+            l.append(k)
+            k=k-1
+        a=a*2
+    if f==1:
+        break
+print(l[n-1])
